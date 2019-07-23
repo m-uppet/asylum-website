@@ -1,0 +1,259 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    position:;
+    margin:auto;
+    overflow-x:visible;
+    overflow-y:visible;
+    background-color:rgb(20 20 20);
+    font-family: "helvetica"
+}
+#navbar {
+    overflow:hidden;
+    background-color:rgb(20 20 20);
+    padding: 60px 10px ;
+    transition: 0.4s;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: 99;
+}
+#navbar a{
+    position: relative;
+    float:left;
+    color:white;
+    text-align: center;
+    padding:12px;
+    text-decoration: none;
+    font-size:18px;
+    line-height:25px;
+    border-radius: 4px;
+    
+
+}
+#navbar #logo {
+    font-size:35px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+#navbar a:hover {
+    background-color:gray;
+    color:black;
+}
+#navbar a.active {
+    background-color:firebrick;
+    color:white
+}
+#navbarRight {
+    float:right;
+}
+@media screen and (max-width: 580px) {
+    #navbar {
+        padding: 20px 10px !important;
+    }
+    #navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    #navbar-right{
+        float: none;
+    }
+}
+main{
+    border:2px solid grey;
+    overflow:scroll;
+    max-height:1000px;
+    position:relative;
+    top:200px;
+    margin:20px 20px 40px 20px;
+    scroll-behavior: smooth;
+    
+    
+}
+#backVid {
+    position:relative;
+    width:100%;
+    height:80vh;
+    object-fit: cover;
+   
+    
+   
+}
+#about{
+    position:relative;
+    height:100vh;
+    background-color:black;
+}
+#shater{
+    position: absolute;
+    right:100px;
+    bottom:0;
+    height:85vh
+}
+.aboutTxt {
+    max-height:;
+    position:absolute;
+    background-color:;
+    padding: ;
+    font-size:16px;
+    line-height:35px;
+    margin:150px 800px 100px 0px;
+    text-align:justify;
+    
+    color:white;
+}
+.logoBack{
+    width:100%;
+    background-color:rgb(20 20 20);
+    padding-top:100px;
+    padding-bottom:100px
+    
+}
+#asLogo{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    height:50vh
+}
+.join{
+    overflow:hidden;
+    color:white;
+    background-color:
+}
+#howTo{
+    text-align: center;
+    background color: rgb(20 20 20) 
+}
+.joinInfo p{
+    display:block;
+    float: left;
+    margin:10px 200px 10px 265px;
+    overflow:hidden;
+    
+}
+.joinBox{
+    background-color:black;
+}
+#apply{
+}
+#comments {
+    font-size:25px;
+    text-align:center;
+    margin:;
+    font-style:italic;
+    padding:200px 100px 200px 100px;
+    color:white;
+    background-color:black;
+    overflow:hidden;
+    
+}
+#comments p{
+    -webkit-animation: slide-left 10s infinite;
+    
+}
+@-webkit-keyframes slide-left {
+    from {
+        margin-left:100%;
+        width:100%
+    }
+    to {
+        margin-right:100%;
+        width: 100%;
+    }
+    0% {
+        opacity :0
+    }
+    100%{
+        opacity:1
+    }
+}
+		
+#contact{
+    text-align:center;
+    background-color:rgb(20 20 20);
+    
+}
+.adm {
+    float:left;
+    margin-left:300px;
+    margin-top:600px;
+    margin-bottom:100px;
+    color:white;
+    width:100px;
+    }
+.sil {
+    opacity:1;
+    display:block;
+    transition: .5s ease;
+    backface-visibility: hidden; 
+    width:100px;
+}
+.middle {
+    transition: .5s ease;
+    opacity:0;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    -ms-transform: translate (-50%, -50%);
+    text-align:center;
+}
+.adm:hover .sil{
+    opacity: 0.3;
+}
+.adm:hover .middle{
+    opacity:1;
+}
+.contactTxt{
+    background-color: white;
+    color:black;
+    font-size: 16px;
+    padding: 16px 32px;
+    bottom:60px;
+    position:absolute;
+    left:23%
+}
+#admInfo {
+    max-width: 200px;
+    text-align:justify;
+    font-size:13px;
+}
+footer {
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    text-align:center;
+    padding:10px 0px 10px 0px;
+    background-color:rgb(20 20 20);
+    z-index:1
+}
+footer a{
+    color:white;
+    text-decoration: none;
+    display:block;
+    
+}
+footer a:hover{
+    color:grey
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: ; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
